@@ -47,22 +47,45 @@ class _HomePageState extends State<HomePage>
       body: Center(
         child: _isLoaded
             ? Column(
-                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  const Text('Animation Completed'),
+                  const Text('animation catalog'),
                   ElevatedButton(
                     onPressed: () {
                       Modular.to.pushNamed('/second_animation/');
                     },
                     child: const Text('Proxima animação'),
-                  )
+                  ),
+                  ElevatedButton(
+                    onPressed: () {
+                      Modular.to.pushNamed('/third_animation');
+                    },
+                    child: const Text('Proxima animação'),
+                  ),
+                  ElevatedButton(
+                    onPressed: () {
+                      Modular.to.pushNamed('/fourth_animation');
+                    },
+                    child: const Text('Proxima animação'),
+                  ),
+                   ElevatedButton(
+                    onPressed: () {
+                      Modular.to.pushNamed('/fifth_animation');
+                    },
+                    child: const Text('Proxima animação'),
+                  ),
+                   ElevatedButton(
+                    onPressed: () {
+                      Modular.to.pushNamed('/sixth_animation');
+                    },
+                    child: const Text('Proxima animação'),
+                  ),
                 ],
               )
             : Lottie.asset(
                 'assets/loading.json',
                 controller: _controller,
                 onLoaded: (comp) {
-                  _controller.duration =  const Duration(seconds: 5);
+                  _controller.duration = const Duration(seconds: 3);
                   _controller.forward();
                 },
               ),

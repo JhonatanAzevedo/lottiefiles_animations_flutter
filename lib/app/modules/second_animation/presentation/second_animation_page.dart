@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_modular/flutter_modular.dart';
 import 'package:lottie/lottie.dart';
 
 class SecondAnimationPage extends StatefulWidget {
@@ -26,12 +25,6 @@ class _SecondAnimationPageState extends State<SecondAnimationPage> {
               height: 200,
               fit: BoxFit.fill,
             ),
-             ElevatedButton(
-                    onPressed: () {
-                      Modular.to.pushNamed('/second_animation/third_animation/');
-                    },
-                    child: const Text('Proxima animação'),
-                  )
           ],
         ),
       ),

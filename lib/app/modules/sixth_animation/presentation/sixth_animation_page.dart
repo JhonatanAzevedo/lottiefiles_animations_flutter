@@ -1,7 +1,6 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_modular/flutter_modular.dart';
 import 'package:flutter_swiper_null_safety/flutter_swiper_null_safety.dart';
 
 import 'details.dart';
@@ -111,13 +110,6 @@ class _SixthAnimationPageState extends State<SixthAnimationPage>
                           ),
                         ),
                       ),
-                      ElevatedButton(
-                        onPressed: () {
-                          Modular.to.popUntil(ModalRoute.withName('/second_animation/'));
-
-                        },
-                        child: const Text('proxima animacao'),
-                      )
                     ],
                   ),
                 );

@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_modular/flutter_modular.dart';
 import 'package:lottie/lottie.dart';
 
 class ThirdAnimationPage extends StatelessWidget {
-  const ThirdAnimationPage({ Key? key }) : super(key: key);
+  const ThirdAnimationPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -21,12 +20,6 @@ class ThirdAnimationPage extends StatelessWidget {
               height: 200,
               fit: BoxFit.fill,
             ),
-             ElevatedButton(
-                    onPressed: () {
-                      Modular.to.pushNamed('/second_animation/third_animation/fourth_animation/');
-                    },
-                    child: const Text('Proxima animação'),
-                  )
           ],
         ),
       ),

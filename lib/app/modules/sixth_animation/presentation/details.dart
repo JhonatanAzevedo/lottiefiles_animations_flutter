@@ -92,10 +92,6 @@ class PNetworkImage extends StatelessWidget {
     }
     return image;
   },
-  
-    
-      // placeholder: (context, url) => Center(child: CircularProgressIndicator()),
-      // errorWidget: (context, url, error) => Image.asset('assets/placeholder.jpg',fit: BoxFit.cover,),
       fit: fit,
       width: width,
       height: height,
