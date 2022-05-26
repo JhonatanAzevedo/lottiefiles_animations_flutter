@@ -2,7 +2,7 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 
-import 'sixth_animation_page.dart';
+import 'image_animation_page.dart';
 
 class AnimationOneDetails extends StatelessWidget {
   final int? index;
@@ -83,15 +83,15 @@ class PNetworkImage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Image.network(
       image!,
-      frameBuilder:  (_, image, loadingBuilder, __) {
-    if (loadingBuilder == null) {
-      return const SizedBox(
-        height: 300,
-        child: Center(child: CircularProgressIndicator()),
-      );
-    }
-    return image;
-  },
+      frameBuilder: (_, image, loadingBuilder, __) {
+        if (loadingBuilder == null) {
+          return const SizedBox(
+            height: 300,
+            child: Center(child: CircularProgressIndicator()),
+          );
+        }
+        return image;
+      },
       fit: fit,
       width: width,
       height: height,

@@ -17,14 +17,14 @@ const List<Map> dummy = [
   {"title": "White Beautiful Bag", "price": "\$350"},
 ];
 
-class SixthAnimationPage extends StatefulWidget {
-  const SixthAnimationPage({Key? key}) : super(key: key);
+class ImageAnimationPage extends StatefulWidget {
+  const ImageAnimationPage({Key? key}) : super(key: key);
 
   @override
-  _SixthAnimationPageState createState() => _SixthAnimationPageState();
+  _ImageAnimationPageState createState() => _ImageAnimationPageState();
 }
 
-class _SixthAnimationPageState extends State<SixthAnimationPage>
+class _ImageAnimationPageState extends State<ImageAnimationPage>
     with SingleTickerProviderStateMixin {
   int currentIndex = 0;
   int prevIndex = 0;

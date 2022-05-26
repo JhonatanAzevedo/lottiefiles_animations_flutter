@@ -1,13 +1,13 @@
 import 'package:flutter_modular/flutter_modular.dart';
 
-import 'home/home_module.dart';
+import 'presentation/email_success_page.dart';
 
-class AppModule extends Module {
+class EmailSuccessModule extends Module {
   @override
   List<Bind<Object>> get binds => [];
 
   @override
   List<ModularRoute> get routes => [
-        ModuleRoute('/', module: HomeModule()),
+        ChildRoute('/', child: (ctx, args) => const EmailSuccessPage()),
       ];
 }
