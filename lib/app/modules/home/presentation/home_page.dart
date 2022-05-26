@@ -19,7 +19,6 @@ class _HomePageState extends State<HomePage>
   void initState() {
     _controller = AnimationController(
       vsync: this,
-      duration: const Duration(milliseconds: 750),
     );
 
     _controller.addStatusListener((status) {
@@ -63,7 +62,7 @@ class _HomePageState extends State<HomePage>
                 'assets/loading.json',
                 controller: _controller,
                 onLoaded: (comp) {
-                  _controller.duration = comp.duration;
+                  _controller.duration =  const Duration(seconds: 5);
                   _controller.forward();
                 },
               ),

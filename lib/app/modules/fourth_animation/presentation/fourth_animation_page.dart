@@ -23,6 +23,8 @@ class FourthAnimationPage extends StatelessWidget {
             ),
             ElevatedButton(
               onPressed: () {
+                 // Modular.to.popUntil(ModalRoute.withName('/second_animation/'));
+
                 Modular.to.pushNamed('/second_animation/third_animation/fourth_animation/fifth_animation/');
               },
               child: const Text('Proxima animação'),
