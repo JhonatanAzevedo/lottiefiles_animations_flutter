@@ -48,36 +48,33 @@ class _HomePageState extends State<HomePage>
         child: _isLoaded
             ? Column(
                 children: [
-                  const Text('animation catalog'),
-                  ElevatedButton(
-                    onPressed: () {
-                      Modular.to.pushNamed('/second_animation/');
-                    },
-                    child: const Text('Proxima animação'),
+                  const Text(
+                    'animation catalog',
+                    style: TextStyle(fontSize: 30),
                   ),
                   ElevatedButton(
                     onPressed: () {
-                      Modular.to.pushNamed('/third_animation');
+                      Modular.to.pushNamed('/unlock_animation/');
                     },
-                    child: const Text('Proxima animação'),
+                    child: const Text('unlock animation'),
                   ),
                   ElevatedButton(
                     onPressed: () {
-                      Modular.to.pushNamed('/fourth_animation');
+                      Modular.to.pushNamed('/email_success/');
                     },
-                    child: const Text('Proxima animação'),
+                    child: const Text('email success'),
                   ),
-                   ElevatedButton(
+                  ElevatedButton(
                     onPressed: () {
-                      Modular.to.pushNamed('/fifth_animation');
+                      Modular.to.pushNamed('/dog_steps/');
                     },
-                    child: const Text('Proxima animação'),
+                    child: const Text('dog steps'),
                   ),
-                   ElevatedButton(
+                  ElevatedButton(
                     onPressed: () {
-                      Modular.to.pushNamed('/sixth_animation');
+                      Modular.to.pushNamed('/image_animation/');
                     },
-                    child: const Text('Proxima animação'),
+                    child: const Text('image animation'),
                   ),
                 ],
               )
