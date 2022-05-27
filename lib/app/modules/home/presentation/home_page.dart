@@ -76,6 +76,12 @@ class _HomePageState extends State<HomePage>
                     },
                     child: const Text('image animation'),
                   ),
+                   ElevatedButton(
+                    onPressed: () {
+                      Modular.to.pushNamed('/like_button/');
+                    },
+                    child: const Text('like button'),
+                  ),
                 ],
               )
             : Lottie.asset(

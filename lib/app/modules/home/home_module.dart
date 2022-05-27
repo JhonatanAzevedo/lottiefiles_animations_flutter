@@ -4,6 +4,7 @@ import 'package:lottiefiles_animations_flutter/app/modules/home/presentation/hom
 import '../dog_steps/dog_steps_module.dart';
 import '../email_success/email_success_module.dart';
 import '../image_animation/image_animation_module.dart';
+import '../like_button/like_button_module.dart';
 import '../unlock_Animation/unlock_animation_module.dart';
 
 class HomeModule extends Module {
@@ -16,6 +17,7 @@ class HomeModule extends Module {
         ModuleRoute("/unlock_animation", module: UnlockAnimationModule()),
         ModuleRoute("/email_success", module: EmailSuccessModule()),
         ModuleRoute("/dog_steps", module: DogStepsModule()),
-        ModuleRoute("/image_animation", module: ImageAnimationModule())
+        ModuleRoute("/image_animation", module: ImageAnimationModule()),
+        ModuleRoute("/like_button", module: LikeButtonModule()),
       ];
 }
